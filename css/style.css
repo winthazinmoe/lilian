@@ -498,6 +498,7 @@ main {
     font-size: 0.9rem;
 }
 
+/* home responsive */
 
 
 
@@ -699,7 +700,7 @@ textarea {
 }
 
 
-
+/* ................................................... */
 
 
 /* About us pg*/
@@ -975,27 +976,180 @@ textarea {
 
 }
 
-/* Responsive */
-/* mobile */
+/*aboutus Responsive */
 
+   /* TABLET RESPONSIVE */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
-    /* About Us */
-    .about-us {
+    /* About Hero */
+    .About-us {
+        width: 100%;
         height: auto;
-        margin-top: 0;
-        flex-direction: column;
+    }
+
+    .about-us {
+        width: 100%;
+        height: 350px;
+        position: relative;
+        display: flex;
+        justify-content: center;
     }
 
     .about-us img {
         width: 100%;
-        height: 250px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .about-text {
+        width: 85%;
+        position: absolute;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #about-bakery {
+        width: 90%;
+        height: auto;
+        margin: 60px auto;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .intro {
+        width: 50%;
+    }
+
+    .intro img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .intro-text {
+        width: 50%;
+    }
+
+    .intro-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    #about-drink {
+        width: 90%;
+        height: auto;
+        margin: 60px auto;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .intro-text2 {
+        width: 50%;
+    }
+
+    .intro-text2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text2 p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .intro-drink {
+        width: 50%;
+    }
+
+    .intro-drink img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    #about-shop {
+        width: 90%;
+        height: auto;
+        margin: 60px auto;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .image-container {
+        width: 50%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .intro-shop1,
+    .intro-shop2 {
+        width: 50%;
+    }
+
+    .intro-shop1 img,
+    .intro-shop2 img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .intro-text3 {
+        width: 50%;
+    }
+
+    .intro-text3 h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text3 p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+   /* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .About-us {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-us {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-us img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
 
     .about-text {
         width: 90%;
-        position: absolute;
+        padding: 10px;
+        text-align: center;
     }
 
     .about-text h1 {
@@ -1004,30 +1158,32 @@ textarea {
     }
 
     .about-text p {
-        font-size: 14px;
-        text-align: center;
+        font-size: 13px;
+        line-height: 1.6;
     }
 
-
-    /* Bakery */
     #about-bakery {
+        width: 90%;
         height: auto;
-        margin-top: 30px;
-        padding: 20px;
+        margin: 40px auto;
+        display: flex;
         flex-direction: column;
+        gap: 25px;
     }
 
     .intro {
         width: 100%;
-        max-width: 400px;
-        height: 300px;
+    }
+
+    .intro img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
     }
 
     .intro-text {
         width: 100%;
-        height: auto;
-        min-height: 300px;
-        padding: 25px;
+        text-align: center;
     }
 
     .intro-text h2 {
@@ -1035,23 +1191,28 @@ textarea {
     }
 
     .intro-text p {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 1.7;
     }
 
-
-    /* Drinks */
     #about-drink {
+        width: 90%;
         height: auto;
-        margin-top: 30px;
-        padding: 20px;
+        margin: 40px auto;
+        display: flex;
         flex-direction: column;
+        gap: 25px;
     }
 
     .intro-text2 {
         width: 100%;
-        height: auto;
-        min-height: 300px;
-        padding: 25px;
+        text-align: center;
+        order: 1;
+    }
+
+    .intro-drink {
+        width: 100%;
+        order: 2;
     }
 
     .intro-text2 h2 {
@@ -1059,33 +1220,46 @@ textarea {
     }
 
     .intro-text2 p {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 1.7;
     }
 
-    .intro-drink {
+    .intro-drink img {
         width: 100%;
-        max-width: 400px;
-        height: 300px;
+        height: 250px;
+        object-fit: cover;
     }
 
-
-    /* Shop */
     #about-shop {
-        padding: 30px 20px;
+        width: 90%;
+        height: auto;
+        margin: 40px auto;
+        display: flex;
         flex-direction: column;
+        gap: 25px;
     }
 
     .image-container {
         width: 100%;
-        max-width: 400px;
-        height: 350px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .intro-shop1,
+    .intro-shop2 {
+        width: 50%;
+    }
+
+    .intro-shop1 img,
+    .intro-shop2 img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
     }
 
     .intro-text3 {
         width: 100%;
-        height: auto;
-        min-height: 300px;
-        padding: 25px;
+        text-align: center;
     }
 
     .intro-text3 h2 {
@@ -1093,10 +1267,12 @@ textarea {
     }
 
     .intro-text3 p {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 1.7;
     }
-
 }
+/* ...................................... */
+
 
 
 /* contact page */
@@ -1161,14 +1337,6 @@ textarea {
 }
 
 
-
-
-
-
-/* =========================
-   CONTACT TITLE
-========================= */
-
 .contact-title {
     text-align: center;
     padding: 50px 20px 35px;
@@ -1186,10 +1354,6 @@ textarea {
 }
 
 
-/* =========================
-   SHOP + CONTACT
-========================= */
-
 .shop-contact {
     width: 90%;
     margin: auto;
@@ -1206,7 +1370,6 @@ textarea {
 }
 
 
-/* Shop Image */
 
 .shop-image {
     width: 55%;
@@ -1223,7 +1386,6 @@ textarea {
 }
 
 
-/* Shop Information */
 
 .shop-info {
     width: 45%;
@@ -1242,8 +1404,6 @@ textarea {
     margin-bottom: 25px;
 }
 
-
-/* Information Box */
 
 .info-box {
     display: flex;
@@ -1271,10 +1431,6 @@ textarea {
 }
 
 
-/* =========================
-   LOCATION
-========================= */
-
 .location-section {
     width: 90%;
 
@@ -1284,8 +1440,6 @@ textarea {
     gap: 25px;
 }
 
-
-/* Location Text */
 
 .location-text {
     width: 40%;
@@ -1321,8 +1475,6 @@ textarea {
 }
 
 
-/* Map */
-
 .map-box {
     width: 60%;
     height: 300px;
@@ -1348,10 +1500,6 @@ textarea {
     margin-bottom: 5px;
 }
 
-
-/* =========================
-   CONTACT TEAM
-========================= */
 
 .team-section {
     width: 90%;
@@ -1383,8 +1531,6 @@ textarea {
     gap: 20px;
 }
 
-
-/* Team Box */
 
 .team-box {
     flex: 1;
@@ -1421,11 +1567,6 @@ textarea {
     color: #777;
 }
 
-
-/* =========================
-   MESSAGE FORM
-========================= */
-
 .message-section {
     width: 90%;
 
@@ -1443,7 +1584,6 @@ textarea {
 }
 
 
-/* Message Text */
 
 .message-text {
     width: 35%;
@@ -1461,9 +1601,6 @@ textarea {
 .message-text p {
     line-height: 1.8;
 }
-
-
-/* Form */
 
 .contact-form {
     width: 65%;
@@ -1509,14 +1646,12 @@ textarea {
 }
 
 
-/* Message textarea */
 
 .message-input {
     grid-column: 1 / 3;
 }
 
 
-/* Send Button */
 
 .contact-form button {
     grid-column: 1 / 3;
@@ -1541,96 +1676,167 @@ textarea {
 }
 
 
+/* contactpg responsive */
 
-/* TABLET VIEW */
 
-@media screen and (max-width: 900px) {
+   /* TABLET RESPONSIVE */
+
+
+@media screen and (max-width: 1024px) {
+
+    /* Contact Title */
+    .contact-title {
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .contact-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-title p {
+        font-size: 15px;
+    }
+
 
     .shop-contact {
-        width: 92%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        gap: 30px;
+        align-items: center;
     }
 
     .shop-image {
         width: 50%;
     }
 
+    .shop-image img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
     .shop-info {
         width: 50%;
-        padding: 30px;
     }
 
     .shop-info h2 {
-        font-size: 26px;
+        font-size: 1.8rem;
     }
 
+    .shop-info > p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 
-    /* Location */
+    .info-box {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .info-box i {
+        font-size: 20px;
+        min-width: 25px;
+    }
+
+    .info-box h3 {
+        font-size: 16px;
+    }
+
+    .info-box p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
 
     .location-section {
-        width: 92%;
+        width: 90%;
+        margin: 50px auto;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .location-text {
+        width: 45%;
+    }
+
+    .map-box {
+        width: 55%;
+    }
+
+    .map-box iframe {
+        width: 100%;
+        height: 350px;
     }
 
 
-    /* Team */
-
     .team-section {
-        width: 92%;
-        padding: 30px 20px;
+        width: 90%;
+        margin: 50px auto;
+        text-align: center;
     }
 
     .team-container {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 
-        grid-template-columns: 1fr 1fr;
+    .team-box {
+        padding: 25px 15px;
     }
 
 
-    /* Message */
-
     .message-section {
-        width: 92%;
-        padding: 30px;
+        width: 90%;
+        margin: 50px auto;
+        display: flex;
+        gap: 40px;
     }
 
     .message-text {
-        width: 35%;
+        width: 40%;
     }
 
     .contact-form {
-        width: 65%;
+        width: 60%;
     }
 
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
 }
 
 
 
-/* MOBILE VIEW */
+   /* MOBILE RESPONSIVE */
 
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 600px) {
-
-    /* Title */
-
+    /* Contact Title */
     .contact-title {
-        padding: 35px 15px 25px;
+        padding: 40px 20px;
     }
 
     .contact-title h1 {
-        font-size: 32px;
+        font-size: 1.8rem;
     }
 
     .contact-title p {
         font-size: 14px;
+        line-height: 1.7;
     }
 
 
-    /* Shop */
-
     .shop-contact {
-        width: 92%;
-
+        width: 90%;
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
 
     .shop-image {
@@ -1638,100 +1844,156 @@ textarea {
     }
 
     .shop-image img {
-        height: 260px;
-        min-height: 0;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
     }
 
     .shop-info {
         width: 100%;
-        padding: 25px 20px;
     }
 
     .shop-info h2 {
-        font-size: 25px;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .shop-info > p {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.7;
+        margin-bottom: 25px;
     }
 
 
-    /* Location */
+    .info-box {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .info-box i {
+        font-size: 20px;
+        min-width: 25px;
+    }
+
+    .info-box h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .info-box p {
+        font-size: 13px;
+        line-height: 1.6;
+        word-break: break-word;
+    }
+
 
     .location-section {
-        width: 92%;
-
+        width: 90%;
+        margin: 50px auto;
         display: flex;
         flex-direction: column;
+        gap: 25px;
     }
 
     .location-text {
         width: 100%;
-        padding: 25px;
+        text-align: center;
+    }
+
+    .location-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .location-text p {
+        font-size: 14px;
+        line-height: 1.7;
     }
 
     .map-box {
         width: 100%;
-        min-height: 220px;
     }
 
+    .map-box iframe {
+        width: 100%;
+        height: 300px;
+    }
 
-    /* Team */
 
     .team-section {
-        width: 92%;
-        padding: 30px 20px;
+        width: 90%;
+        margin: 50px auto;
+        text-align: center;
     }
 
-    .team-section>h2 {
-        font-size: 26px;
+    .team-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .team-description {
+        font-size: 14px;
     }
 
     .team-container {
+        width: 100%;
         display: grid;
-
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-
-    /* Message */
+    .team-box {
+        width: 100%;
+        padding: 25px 15px;
+    }
 
     .message-section {
-        width: 92%;
-
+        width: 90%;
+        margin: 50px auto;
         display: flex;
         flex-direction: column;
-
-        padding: 25px 20px;
-
-        gap: 15px;
+        gap: 30px;
     }
 
     .message-text {
         width: 100%;
-        padding: 5px;
+        text-align: center;
     }
 
     .message-text h2 {
-        font-size: 26px;
+        font-size: 1.6rem;
     }
 
-
-    /* Form */
+    .message-text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 
     .contact-form {
         width: 100%;
-
-        display: grid;
-
-        grid-template-columns: 1fr;
     }
 
-    .message-input {
-        grid-column: 1;
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .contact-form button {
-        grid-column: 1;
+        width: 100%;
+        padding: 13px;
     }
-
 }
+
+/* .............................. */
+
 
 
 
@@ -1741,16 +2003,16 @@ textarea {
 main {
     /* background: hsl(337, 90%, 85%); */
     width: 100%;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 
 }
 
 
 .menu-hero {
     width: 100%;
-    height: 275px;
+    height: 280px;
 
-    background: #fcecef;
+    background: #e9c4cb;
 
     display: flex;
     align-items: center;
@@ -1761,6 +2023,7 @@ main {
 
 
 .hero-text {
+
     width: 50%;
     padding-left: 11%;
 }
@@ -1801,16 +2064,11 @@ main {
 }
 
 
-
-
 .popular-products {
     width: 100%;
     padding: 50px 9%;
     /* background: #fffaf8; */
 }
-
-
-/* Section Title */
 
 .section-title {
     width: 100%;
@@ -1826,6 +2084,7 @@ main {
     font-size: 32px;
     color: #422020;
     margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .section-title p {
@@ -1855,27 +2114,17 @@ main {
 
 .product-card {
     width: 25%;
-
-    background: #ffffff;
-
+    background: #f0edef;
+    /* background: #ffffff; */
     border-radius: 12px;
-
     overflow: hidden;
-
     box-shadow: 0 4px 15px rgba(90, 40, 50, 0.08);
-
     transition: 0.3s;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
 }
-
-
-
-/* =========================
-   PRODUCT IMAGE
-========================= */
 
 .product-img {
     width: 100%;
@@ -1890,12 +2139,6 @@ main {
 
     object-fit: cover;
 }
-
-
-
-/* =========================
-   PRODUCT INFO
-========================= */
 
 .product-info {
     width: 100%;
@@ -1919,14 +2162,8 @@ main {
 }
 
 
-
-/* =========================
-   PRICE + CART
-========================= */
-
-.price-card{
+.price-card {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1942,18 +2179,12 @@ main {
 
 .price-card button {
     border: none;
-
     background: #f873b1;
     color: white;
-
     padding: 10px 15px;
-
     border-radius: 8px;
-
     font-size: 12px;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -1965,5 +2196,542 @@ main {
     margin-right: 5px;
 }
 
+/* cupcake */
 
+.best-sellers {
+    width: 100%;
+    padding: 50px 9%;
+    /* background: #fffaf8; */
+}
+
+.section-title {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #c73566;
+    margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-title p {
+    color: #8b777d;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.small-title {
+    color: #e91e83;
+    font-size: 16px;
+}
+
+.small-title i {
+    margin-right: 7px;
+}
+
+.product-container2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.product-card2 {
+    width: 25%;
+    /* height: 200px; */
+    /* background: #f3d9ea; */
+    background: #f0edef;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(90, 40, 50, 0.08);
+    transition: 0.3s;
+}
+
+.product-card2:hover {
+    transform: translateY(-5px);
+}
+
+.product-img2 {
+    width: 100%;
+    height: 260px;
+    background: #dfc5d0;
+}
+
+.product-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info2 {
+    width: 100%;
+    padding: 18px;
+}
+
+.product-info2 h3 {
+    font-size: 18px;
+    color: #422020;
+
+    margin-bottom: 8px;
+}
+
+.product-info2 p {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+    color: #95868b;
+
+    margin-bottom: 20px;
+}
+
+.price-card2 {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-card2 span {
+    color: #f54ea2;
+
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+.price-card2 button {
+    border: none;
+    background: #f873b1;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.price-card2 button:hover {
+    background: #ed4898;
+}
+
+.price-card2 button i {
+    margin-right: 5px;
+}
+
+/* drink */
+
+.popular-products3 {
+    width: 100%;
+    padding: 50px 9%;
+    /* background: #fffaf8; */
+}
+
+.section-title3 {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+.section-title3 h2 {
+    font-size: 32px;
+    color: #c73566;
+    margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-title3 p {
+    color: #8b777d;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.small-title3 {
+    color: #e91e83;
+    font-size: 16px;
+}
+
+.small-title3 i {
+    margin-right: 7px;
+}
+
+.product-container3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.product-card3 {
+    width: 25%;
+    /* height: 200px; */
+    /* background: #f3d9ea; */
+    background: #f0edef;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(90, 40, 50, 0.08);
+    transition: 0.3s;
+}
+
+.product-card3:hover {
+    transform: translateY(-5px);
+}
+
+.product-img3 {
+    width: 100%;
+    height: 300px;
+    background: #dfc5d0;
+}
+
+.product-img3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info3 {
+    width: 100%;
+    padding: 18px;
+}
+
+.product-info3 h3 {
+    font-size: 18px;
+    color: #422020;
+
+    margin-bottom: 8px;
+}
+
+.product-info3 p {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+    color: #95868b;
+
+    margin-bottom: 20px;
+}
+
+.price-card3 {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-card3 span {
+    color: #f54ea2;
+
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+.price-card3 button {
+    border: none;
+    background: #f873b1;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.price-card3 button:hover {
+    background: #ed4898;
+}
+
+.price-card3 button i {
+    margin-right: 5px;
+}
+
+/* menu responsive */
+
+   /* TABLET VIEW */
+
+@media (max-width: 1024px) {
+    .menu-hero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 6%;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .section-title,
+    .section-title3 {
+        width: 90%;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    .product-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 48%;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .product-container2 {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .product-card2 {
+        width: 48%;
+    }
+
+    .product-img2 {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .product-container3 {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .product-card3 {
+        width: 48%;
+    }
+
+    .product-img3 {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .product-info,
+    .product-info2,
+    .product-info3 {
+        padding: 15px;
+    }
+
+    .product-info h3,
+    .product-info2 h3,
+    .product-info3 h3 {
+        font-size: 18px;
+    }
+
+    .product-info p,
+    .product-info2 p,
+    .product-info3 p {
+        font-size: 14px;
+    }
+
+}
+
+   /* MOBILE VIEW */
+
+@media (max-width: 600px) {
+
+    .menu-hero {
+        width: 100%;
+        padding: 20px 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 25px 10px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .popular-products,
+    .best-sellers,
+    .popular-products3 {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .section-title,
+    .section-title3 {
+        width: 90%;
+        margin: 0 auto 25px;
+        text-align: center;
+    }
+
+    .section-title h1,
+    .section-title3 h1 {
+        font-size: 1.7rem;
+    }
+
+    .section-title p,
+    .section-title3 p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .product-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .product-card {
+        width: 47%;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .product-container2 {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .product-card2 {
+        width: 47%;
+    }
+
+    .product-img2 {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .product-container3 {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .product-card3 {
+        width: 47%;
+    }
+
+    .product-img3 {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .product-info,
+    .product-info2,
+    .product-info3 {
+        padding: 10px;
+    }
+
+    .product-info h3,
+    .product-info2 h3,
+    .product-info3 h3 {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .product-info p,
+    .product-info2 p,
+    .product-info3 p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .price-card,
+    .price-card2,
+    .price-card3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .price-card button,
+    .price-card2 button,
+    .price-card3 button {
+        width: 100%;
+    }
+/* ............................... */
 
